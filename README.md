@@ -9,3 +9,7 @@ Paul
 
 ## Index of Documents
 * ![Overview of Unit Testing](/unit_testing_overview.md)
+* ![Git Command Reference](/git_ref.md)
+* ![R Code Reference](/R_ref.md)
+* ![Python Code Reference](/python_ref.md)
+* ![Linux Command Reference](/linx_ref.md) 
