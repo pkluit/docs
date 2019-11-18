@@ -1,6 +1,5 @@
-# Documents
 
-Welcome!
+# Welcome!
 
 If you're reading this, i'm pumped that you're hear but also astonished that you stumbled across my Github
 The purpose of this repo is simply to compile any and all documents I find helpful to my coding experience.
