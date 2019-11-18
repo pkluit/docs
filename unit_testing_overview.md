@@ -18,7 +18,7 @@
 ## **Why Unit Testing?**
 Unit testing allows for greater confidence in the outputs of a production code base as well as allows for sustainable growth in the code base. While unit testing takes more upfront time, a quality testing suite will allows for refactoring and feature additions without a signficant amount of slowdown due to pinpointing and fixing bugs. See the image below for a look at the time spent working on a code base with and without testing.
 
-![](dev_cycle.jpg)
+![Alt text](/images/dev_cycle.jpg)
 
 ## **Unit Testing Structure**
 A unit test should be built using the following *Arrange/Act/Assert* or *Given/When/Then* structure:
@@ -37,7 +37,7 @@ A well built unit testing has four attributes:
 - Resistence to refactoring
     - The tests written should be able to withstand the restructing of code without failing/throwing up false alarms. In other words, how good the test suite is at indicating the absence of bugs.
 
-    ![](unit_testing_error_types.bmp)
+    ![Alt text](/images/unit_testing_error_types.bmp)
 
 - Fast feedback
     - Unit tests that run quickly allow for efficient bug recognition and testing. Efficiencies here allow you to build out a greater breadth of tests which improves your coverage metrics.
@@ -46,7 +46,7 @@ A well built unit testing has four attributes:
 
 If a test fails to embody these four standards, the test loses its value completely. However, it is impossible to maximize each of these four attributes as the first three at least are mutually exclusive. If you maximize two of the first three, you will end up with a shortcoming. The following diagram lays this out nicely.
 
-![](unit_testing_venn_diagram.bmp)
+![Alt text](/images/unit_testing_venn_diagram.bmp)
 
 
 
