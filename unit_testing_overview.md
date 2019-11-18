@@ -18,7 +18,7 @@
 ## **Why Unit Testing?**
 Unit testing allows for greater confidence in the outputs of a production code base as well as allows for sustainable growth in the code base. While unit testing takes more upfront time, a quality testing suite will allows for refactoring and feature additions without a signficant amount of slowdown due to pinpointing and fixing bugs. See the image below for a look at the time spent working on a code base with and without testing.
 
-![Alt text](/images/dev_cycle.jpg)
+![Alt text](/images/unit_testing_dev_cycle.jpg)
 
 ## **Unit Testing Structure**
 A unit test should be built using the following *Arrange/Act/Assert* or *Given/When/Then* structure:
