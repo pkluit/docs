@@ -6,6 +6,7 @@ The purpose of this document is to provide a place for me to document any helpfu
 
 1. Create a local branch & push to remote
 2. Delete both local and remote branches
+3. Integrate remote changes into local branch
 
 ## Snippets
 
@@ -19,6 +20,7 @@ Push the branch to the remote server name origin. This will create the branch in
 ```bash
 $ git push origin <branch_name>
 ```
+
 #### 2. Delete both local and remote branches
 
 This will delete the local branch if it has already been pushed and merged with remote branches.
@@ -35,3 +37,20 @@ To delete the remote branch, you will need to run the following command. This wi
 ```bash
 $ git push origin --delete <branch_name>
 ```
+
+#### 3. Integrate remote changes into local branch
+`git pull` is a great way to integrate changes from a remote branch into a local branch. This command is shorthand for a *git fetch* which pulls down the remote branch followed by a `git merge`. You can can use the `--rebase` option to follow the fetch with a rebase instead of a merge.
+
+Checkout your local branch to merge with.
+```bash
+$ git checkout <branch_name>
+```
+Pull down your remote changes and merge into local branch
+```
+$ git pull origin <branch_name>
+```
+Or, if you would like to rebase:
+```bash
+$ git pull --rebase origin <branch_name>
+```
+
