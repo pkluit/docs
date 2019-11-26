@@ -97,3 +97,12 @@ Next, you will need to create a remote repository to push to. You can do this th
 ```bash
 $ curl -u <your_username> -H "Content-Type: application/json" -d '{"name":"<your_repo_name>"}' https://api.github.com/user/repos
 ```
+
+Then, you need to connect your local repository to your remote repository that you just created. I use SSH and reccomend it; however, HTTPS works fine as well.
+```bash
+$ git remote add origin git@github.com:<your_username>/<your_repo_name>.git
+```
+Finally, push your initial commit to the master branch
+```bash
+$ git push -u origin master
+```
