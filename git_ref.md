@@ -7,6 +7,7 @@ The purpose of this document is to provide a place for me to document any helpfu
 1. [Create a local branch & push to remote](#sec_1)
 2. [Delete both local and remote branches](#sec_2)
 3. [Integrate remote changes into local branch](#sec_3)
+4. [Merge local feature branch to master and push to remote](#sec_4)
 
 ## Snippets
 
@@ -54,3 +55,24 @@ Or, if you would like to rebase:
 $ git pull --rebase origin <branch_name>
 ```
 
+#### 4. Merge local feature branch to master and push to remote <a name="sec_4"></a>
+First, we need to ensure that the dev branch is up to date with what is in the remote dev branch. We can simply use `git pull` to fetch our remote feature branch and merge it with our local feature branch.
+```bash
+$ git pull origin <branch_name>
+```
+Next, we'll checkout the branch we want to merge our feature into. In this case, this is the master branch.
+```bash
+$ git checkout master
+```
+Then, we'll merge in the new feature.
+```bash
+$ git merge <branch_name>
+```
+Next, we will push the master branch to remote so that all our changes we merged in are in the remote repository.
+```bash
+$ git push origin master
+```
+Finally, if we are happy with how things turned out, we can delete the feature branch.
+```bash
+$ git branch -d <branch_name>
+```
