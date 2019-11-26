@@ -93,3 +93,7 @@ git status
 git add .
 git commit -m "PK: initial commit"
 ```
+Next, you will need to create a remote repository to push to. You can do this through the UI of Github (or other service) but I would rather do it through the command line. You can use cURL and the github api to accomplish this.
+```bash
+$ curl -u <your_username> -H "Content-Type: application/json" -d '{"name":"<your_repo_name>"}' https://api.github.com/user/repos
+```
