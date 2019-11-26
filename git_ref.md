@@ -4,5 +4,20 @@ The purpose of this document is to provide a place for me to document any helpfu
 
 ## Index
 
+1. Create a local branch & push to remote
+2. Delete both local and remote branches
+
 ## Snippets
+
+####1. Create a local branch & push to remote
+
+Create a branch with "branch_name" in the local repository
+```bash
+$ git checkout -b *branch_name*
+```
+Push the branch to the remote server name origin. This will create the branch in the remote repository (this could also be done using UI)
+```bash
+$ git push origin *branch_name*
+```
+
 
