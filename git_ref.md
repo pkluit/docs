@@ -8,6 +8,7 @@ The purpose of this document is to provide a place for me to document any helpfu
 2. [Delete both local and remote branches](#sec_2)
 3. [Integrate remote changes into local branch](#sec_3)
 4. [Merge local feature branch to master and push to remote](#sec_4)
+5. [Create new local repository and then add it to remote repository](#sec_5)
 
 ## Snippets
 
@@ -75,4 +76,20 @@ $ git push origin master
 Finally, if we are happy with how things turned out, we can delete the feature branch.
 ```bash
 $ git branch -d <branch_name>
+```
+
+#### 5. Create new local repository and then add it to remote repository <a name="sec_5"></a>
+First, navigate to the directory where you would like to create your repository. For me, this looks like
+```bash
+$ cd /paulk/
+```
+Then, initialize the repository
+```bash
+git init
+```
+Then, I like to add all my files and make my initial commit
+```bash
+git status
+git add .
+git commit -m "PK: initial commit"
 ```
