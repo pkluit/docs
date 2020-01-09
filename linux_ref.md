@@ -4,5 +4,13 @@ The purpose of this document is to provide a place for me to document any helpfu
 
 ## Index
 
+1. [View Google Cloud BigQuery load job info](#sec_1)
+
 ## Snippets
 
+#### 1. View Google Cloud BigQuery load job info <a name="sec_1"></a>
+
+command will need to be run in cloud terminal or cloud SDK
+```bash
+$ bq --format=prettyjson show -j <job_id>
+```
